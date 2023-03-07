@@ -1,0 +1,12 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: boot-admin
+  cloud:
+    config:
+      uri: http://localhost:8092
+security:
+  user:
+    name: admin
+    password: admin

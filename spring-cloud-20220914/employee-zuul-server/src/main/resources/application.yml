@@ -1,0 +1,16 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: employee-zuul-service
+zuul:
+  routes:
+    producer:
+      service-id: employee-producer
+      path: /producer/**
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka

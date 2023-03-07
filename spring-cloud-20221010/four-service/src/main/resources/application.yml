@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: four-service
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: /four/healthCheck
+        healthCheckInterval: 5s
+  zipkin:
+    enabled: false
+server:
+  port: 8084

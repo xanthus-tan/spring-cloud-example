@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: one-service
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: /one/healthCheck
+        healthCheckInterval: 5s
+  zipkin:
+    enabled: false
+server:
+  port: 8081

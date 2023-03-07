@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: three-service
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: /three/healthCheck
+        healthCheckInterval: 5s
+  zipkin:
+    enabled: false
+server:
+  port: 8083

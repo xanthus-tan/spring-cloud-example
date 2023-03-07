@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: two-service
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: /two/healthCheck
+        healthCheckInterval: 5s
+  zipkin:
+    enabled: false
+server:
+  port: 8082
